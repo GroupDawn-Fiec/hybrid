@@ -1,0 +1,7 @@
+{
+  "name": "taskslist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
