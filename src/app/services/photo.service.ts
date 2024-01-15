@@ -35,15 +35,15 @@ constructor(platform: Platform) {
       quality: 100
     });
 
-    Preferences.set({
-      key: this.PHOTO_STORAGE,
-      value: JSON.stringify(this.photos),
-    });
+ 
 
     	// Agregue el archivo al inicio del arreglo
 		const savedImageFile = await this.savePicture(capturedPhoto);
 		this.photos.unshift(savedImageFile);
-
+    Preferences.set({
+      key: this.PHOTO_STORAGE,
+      value: JSON.stringify(this.photos),
+    });
     // Agregue el archivo al inicio del arreglo
     //this.photos.unshift({
     //  filepath: "soon...",
